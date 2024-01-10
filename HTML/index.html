@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css"
+      integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="stylesheet" href="/CSS/style.CSS" />
+    <link rel="icon" type="image/x-icon" href="../songPhotos/06baf7a640714111ad014d9d4f06c1e0.jpg">
+    <title>🎵 Music 🎵</title>
+
+    <style></style>
+  </head>
+
+  <body>
+    <!-- sapsiree taerattanachai -->
+    <main>
+      <div id="left" >
+        <div id="close">&times;</div>
+        <div class="rightTop">
+          <div>
+            <i class="ri-home-5-fill"></i>
+            <h3>Home</h3>
+          </div>
+          <div>
+            <i class="ri-search-line"></i>
+            <h3>Search</h3>
+          </div>
+        </div>
+
+        <div class="rightBottom">
+          <div class="rightBottom_1">
+            <svg
+              data-encore-id="icon"
+              role="img"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              class="Svg-sc-ytk21e-0 iYxpxA"
+            >
+              <path
+                d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
+              ></path>
+            </svg>
+            <h3>Your Library</h3>
+            <i class="ri-search-line"></i>
+          </div>
+          <div class="rightBottom_2">
+            <button
+              class="btnArtist"
+              id="btnArtist"
+              onclick="createArtistList()"
+            >
+              Artist
+            </button>
+            <button class="btnPlayList" id="btnPlayList">Playlist</button>
+          </div>
+
+          <div class="rightBottom_3" id="rightBottom_3">
+            <!-- <div class="artistinfo">
+            <div class="image">
+              <img src="/Song Photo/Rose D.O.jpg" alt="">
+            </div>
+            <div class="artistNameAndWho">
+              <p class="nameOfArtist">D.O</p>
+              <p class="who">Artist</p>
+            </div>
+          </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div id="right">
+        <div class="linear"></div>
+        <div class="right_1">
+          <div id="mobile"><button>Artist & Playlist</button></div>
+          <button class="btn1">Explore Premium</button>
+          <button class="bell"><i class="ri-notification-2-line"></i></button>
+          <button class="user"><i class="ri-user-line"></i></button>
+        </div>
+
+        <div class="right_2">
+          <h1 class="messageTime">Good morning</h1>
+          <p class="time"></p>
+        </div>
+
+        <div class="right_3">
+          <div class="heart"><i class="ri-heart-3-fill"></i></div>
+          <h3>Liked Songs</h3>
+        </div>
+
+        <div class="right_4">
+          <div class="boxKAbox" id="boxKAbox"></div>
+        </div>
+      </div>
+    </main>
+    <main class="playBar">
+      <div class="playBarLeft">
+        <div class="imagePayBar" id="imagePayBar">
+          <img
+            id=""
+            src="https://www.freestyle666.com/uploads/allimg/230822/225RK933-0.jpg"
+            alt=""
+          />
+        </div>
+        <div class="songInfoPlaybar">
+          <p id="playBarSongName"></p>
+          <p id="playSong-sArtist"></p>
+        </div>
+        <i class="ri-heart-3-line"></i>
+      </div>
+
+      <div class="playBarCenter">
+        <div class="playBarCenterTop">
+          <!-- <div id="playBarSongName"> </div> -->
+          <div class="playBarCenterIcons">
+            <div class="backbtn"><i class="ri-skip-back-fill"></i></div>
+            <div class="playbtnSeekBar"><i class="ri-play-fill"></i></div>
+            <div class="forwardBtn"><i class="ri-skip-forward-fill"></i></div>
+            <div class="repeatBtn"><i class="ri-repeat-2-line"></i></div>
+          </div>
+          <div id="playBarSongTime"></div>
+        </div>
+        <div class="seekbar" id="seekbar">
+          <div class="molu" id="molu"></div>
+          <div class="chhotu"></div>
+        </div>
+
+        <div class="playBarCenterBottom"></div>
+      </div>
+
+      <div class="playBarRight">
+        <i class="ri-volume-up-line"></i>
+        <input type="range" />
+        <!-- <i class="ri-music-2-fill"></i> -->
+      </div>
+      <!-- <img src="/Songs/Kumar Sanu - Is Tarah Aashiqui Ka.mp3" alt=""> -->
+    </main>
+  </body>
+  <script src="/Javascript/songData.js"></script>
+  <script src="/Javascript/script.js"></script>
+  <script></script>
+</html>
