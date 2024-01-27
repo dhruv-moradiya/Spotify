@@ -11,6 +11,12 @@ body {
   color: white;
 }
 
+.mainDiv {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
 main {
   display: flex;
 }
@@ -41,7 +47,7 @@ h3 {
   gap: 10px;
   font-size: 15px;
   align-items: center;
-  width: fit-content;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -53,7 +59,7 @@ h3 {
   font-weight: 600;
 }
 
-.rightTop i {
+.rightTop .rightTopSearch i {
   font-size: 20px;
 }
 
@@ -89,7 +95,7 @@ h3 {
   cursor: pointer;
 }
 
-.rightBottom_2 button{
+.rightBottom_2 button {
   color: white;
   background-color: #000000;
   font-weight: 600;
@@ -100,7 +106,7 @@ h3 {
   cursor: pointer;
 }
 
-.rightBottom_2 button:hover{
+.rightBottom_2 button:hover {
   color: black;
   background-color: white;
 }
@@ -138,7 +144,7 @@ h3 {
   transition: all 0.2s;
 }
 
-.rightBottom_3 .artistinfo{
+.rightBottom_3 .artistinfo {
   /* border: 1px solid hotpink; */
   background-color: #161616;
   border-radius: 6px;
@@ -151,32 +157,32 @@ h3 {
   cursor: pointer;
 }
 
-.rightBottom_3 .artistinfo:hover{
+.rightBottom_3 .artistinfo:hover {
   background-color: #202020;
 }
 
-.artistinfo .image{
+.artistinfo .image {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
 }
 
-.artistinfo .image img{
+.artistinfo .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.artistinfo .artistNameAndWho p:nth-child(1){
+.artistinfo .artistNameAndWho p:nth-child(1) {
   font-weight: 600;
 }
 
-.artistinfo .artistNameAndWho p:nth-child(2){
+.artistinfo .artistNameAndWho p:nth-child(2) {
   font-size: 13px;
 }
 
-.songsInfo:hover{
+.songsInfo:hover {
   background-color: #202020;
 }
 
@@ -196,10 +202,21 @@ h3 {
 .songDetial {
   flex-grow: 1;
   margin-left: 10px;
-  max-width: 150px;
+  max-width: 130px;
 }
 
-.songPlayBtn, .trackLike {
+.songDetial p:nth-child(1) {
+  width: 128px;
+  /* background-color: #1fdf64; */
+}
+
+.songDetial p:nth-child(2) {
+  font-size: 14px;
+  /* background-color: #bfdf1f; */
+}
+
+.songPlayBtn,
+.trackLike {
   width: 40px;
   height: 40px;
   margin-left: auto;
@@ -210,7 +227,8 @@ h3 {
   cursor: pointer;
 }
 
-.songPlayBtn i, .trackLike i {
+.songPlayBtn i,
+.trackLike i {
   font-size: 20px;
   color: white;
 }
@@ -246,7 +264,7 @@ h3 {
   z-index: 1; /* Higher z-index for .right_1 */
 }
 
-.right_1 #mobile{
+.right_1 #mobile {
   color: white;
   margin-right: auto;
   margin-left: 20px;
@@ -254,7 +272,7 @@ h3 {
   display: none;
 }
 
-#mobile button{
+#mobile button {
   color: white;
   background-color: #000000;
   border-radius: 50px;
@@ -266,12 +284,12 @@ h3 {
   cursor: pointer;
 }
 
-#mobile button:hover{
+#mobile button:hover {
   color: #000000;
   background-color: white;
 }
 
-#close{
+#close {
   font-size: 24px;
   cursor: pointer;
   position: absolute;
@@ -324,7 +342,7 @@ h3 {
   gap: 10px;
 }
 
-.right_2 p{
+.right_2 p {
   font-size: 12px;
   align-self: end;
   padding-bottom: 4px;
@@ -379,7 +397,7 @@ h3 {
   display: flex;
   /* justify-content: center; */
   width: 100%;
-  height: 100%;
+  height: 80%;
   padding: 0 10px;
   overflow-y: auto;
   flex-wrap: wrap;
@@ -478,7 +496,7 @@ h3 {
   margin-top: 5px;
 }
 
-.playBar{
+.playBar {
   /* border: 2px solid hotpink; */
   margin: 0 5px;
   width: calc(100% - 10px);
@@ -486,46 +504,46 @@ h3 {
   padding: 4px 6px;
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
 }
 
-.playBarLeft{
+.playBarLeft {
   display: flex;
   align-items: center;
   gap: 10px;
   flex: 1;
 }
 
-.imagePayBar{
+.imagePayBar {
   width: 65px;
   height: 65px;
   border-radius: 6px;
   overflow: hidden;
 }
 
-.imagePayBar img{
+.imagePayBar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.songInfoPlaybar{
+.songInfoPlaybar {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.songInfoPlaybar p:nth-child(2){
+.songInfoPlaybar p:nth-child(2) {
   font-size: 12px;
 }
 
-.playBarLeft i{
+.playBarLeft i {
   font-size: 20px;
   cursor: pointer;
   margin-left: 10px;
 }
 
-.playBarCenter{
+.playBarCenter {
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -534,49 +552,84 @@ h3 {
   gap: 10px;
 }
 
-.playBarCenterTop{
+.playBarCenterTop {
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.playBarCenterIcons{
+.playBarCenterIcons {
   display: flex;
   gap: 10px;
   flex: 1;
   justify-content: center;
 }
 
-.playBarCenterIcons i{
+.playBarCenterIcons i {
   font-size: 20px;
   cursor: pointer;
+  color: rgb(199, 197, 197);
+  transition: all 0.28s;
 }
 
-#playBarSongTime{
+.playBarCenterIcons i:hover {
+  color: white;
+}
+
+.playBarCenterIcons .backbtn,
+.playBarCenterIcons .playbtnSeekBar,
+.playBarCenterIcons .forwardBtn,
+.playBarCenterIcons .repeatBtn,
+.wowOp {
+  position: relative;
+}
+
+.showOnHover {
+  text-align: center;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #171717;
+  color: white;
+  padding: 6px 6px;
+  border-radius: 4px;
+}
+
+.playBarCenterIcons .backbtn .back,
+.playBarCenterIcons .playbtnSeekBar .play,
+.playBarCenterIcons .forwardBtn .next,
+.playBarCenterIcons .repeatBtn .repeat,
+.wowOp .__lyrics {
+  width: 90px;
+  top: -30px;
+  left: -34px;
+}
+
+#playBarSongTime {
   font-size: 12px;
   font-weight: 600;
 }
 
-.seekbar{
+.seekbar {
   background-color: gray;
   height: 3px;
   width: 80%;
   border-radius: 50px;
   position: relative;
   cursor: pointer;
-  transition: all .16s;
+  transition: all 0.16s;
 }
 
-.seekbar:hover .chhotu{
+.seekbar:hover .chhotu {
   opacity: 1;
 }
 
-.seekbar:hover .molu{
+.seekbar:hover .molu {
   background-color: rgb(5, 159, 5);
 }
 
-.molu{
+.molu {
   position: absolute;
   background-color: white;
   border-radius: 60px;
@@ -586,7 +639,7 @@ h3 {
   /* transition: all .16s; */
 }
 
-.chhotu{
+.chhotu {
   position: absolute;
   width: 14px;
   height: 14px;
@@ -599,27 +652,149 @@ h3 {
   /* transition: all .16s; */
 }
 
-.playBarRight{
+.playBarRight {
   flex: 1;
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: end;
-
 }
 
-.playBarRight i{
+.playBarRight i {
   font-size: 20px;
 }
 
-.playBarRight input{
+.playBarRight input {
   height: 4px;
   background-color: white;
   cursor: pointer;
 }
 
+input[type="range"] {
+  appearance: none;
+  margin-right: 40px;
+  width: 130px;
+  height: 2.4px;
+  border-radius: 50px;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2.4px;
+  cursor: pointer;
+  background: #ddd;
+  border-radius: 50px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  border: 1px solid #333;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Song Like */
+/* ---------------------------------------------------------------------- */
+
+.mainTable {
+  /* border: 1px solid yellow; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.headTable {
+  padding: 10px 0;
+}
+
+.rowClass {
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.headTable,
+.row {
+  width: 100%;
+  display: flex;
+  font-weight: 600;
+}
+
+.headTable div {
+  display: flex;
+  justify-content: center;
+  align-content: inherit;
+}
+
+.row {
+  background-color: #171717;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  padding: 4px;
+}
+
+.row:hover {
+  background-color: #202020;
+  cursor: pointer;
+}
+
+.row div {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.row div:nth-child(1),
+.row div:nth-child(4),
+.row div:nth-child(5),
+.row div:nth-child(6) {
+  justify-content: center;
+}
+
+.headTable div:nth-child(1),
+.row div:nth-child(1) {
+  width: 6%;
+}
+
+.headTable div:nth-child(2),
+.row div:nth-child(2) {
+  width: 45%;
+}
+
+.headTable div:nth-child(3),
+.row div:nth-child(3) {
+  width: 20%;
+}
+
+.headTable div:nth-child(4),
+.row div:nth-child(4) {
+  width: 6%;
+}
+
+.headTable div:nth-child(5),
+.row div:nth-child(5) {
+  width: 10%;
+}
+
+.headTable div:nth-child(6),
+.row div:nth-child(6) {
+  width: 15%;
+}
+/*  ---------------------------------------------------------------------- 
+    Media
+    ----------------------------------------------------------------------*/
+
 @media (max-width: 1260px) {
-  #left{
+  #left {
     position: absolute;
     left: -200%;
     z-index: 5;
@@ -629,15 +804,131 @@ h3 {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
-  #right{
+  #right {
     width: 100vw;
   }
 
-  .right_1 #mobile{
+  .right_1 #mobile {
     display: block;
   }
 
-  #close{
+  #close {
     display: block;
   }
+}
+
+@media (max-width: 900px) {
+  .playBarLeft {
+    flex: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .playBar {
+    padding: 10px;
+    background-color: black;
+    position: absolute;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    bottom: 0;
+    z-index: 4;
+  }
+
+  .playBarCenter {
+    width: 100%;
+  }
+
+  .playBarRight {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wowOp {
+    width: 30px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 700px) {
+  .boxKAbox {
+    /* justify-content: center; */
+    column-gap: 30px;
+  }
+}
+
+/* @media (max-height: 820px) {
+  .right_4 .boxKAbox {
+    height: 90%;
+  }
+}
+
+@media (max-height: 820px) {
+  .right_4 .boxKAbox {
+    height: 70%;
+  }
+}
+
+@media (max-height: 780px) {
+  .right_4 .boxKAbox {
+    height: 60%;
+  }
+} */
+
+/*  ---------------------------------------------------------------------- 
+    Media [End]
+    ----------------------------------------------------------------------*/
+
+.wowOp {
+  position: relative;
+}
+
+.wowOp i {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.wowOp #lyricsBox {
+  width: 250px;
+  height: 300px;
+  border-radius: 6px;
+  background-color: teal;
+  position: absolute;
+  opacity: 0;
+  display: none;
+  right: -20px;
+  transform: translateY(-100%);
+  overflow-y: scroll;
+  padding: 10px;
+  transition: all 0.28s ease;
+}
+
+.wowOp #lyricsBox::-webkit-scrollbar {
+  width: 4px;
+  height: 10px;
+}
+
+.wowOp #lyricsBox::-webkit-scrollbar-thumb {
+  background: #d1d1d1;
+  border-radius: 5px;
+}
+
+.closeLyrics {
+  position: absolute;
+  top: -4px;
+  right: 4px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.showOF {
+  padding: 8px 10px;
+  background-color: #3b0ce8;
+  border-radius: 6px;
+  width: 500px;
+  z-index: 3;
+  position: absolute;
+  top: 12px;
+  right: 24%;
 }
